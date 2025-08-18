@@ -1,0 +1,35 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "publish": "git subtree push --prefix dist origin gh-pages",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "steveng.reddy@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@eslint/js": "^9.6.0",
+    "babel-jest": "^29.7.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.6.0",
+    "globals": "^15.7.0",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "memfs": "^4.9.4",
+    "prettier": "3.3.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
+  }
+}
